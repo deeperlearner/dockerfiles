@@ -1,0 +1,4 @@
+trash-cli
+virtualenvwrapper
+getgist
+ueberzug
