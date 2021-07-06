@@ -1,11 +1,6 @@
-FROM ubuntu:18.04
+FROM tensorflow/tensorflow:latest-gpu
 RUN apt-get update && apt-get install -y \
-    curl \
-    git \
-    python3-pip \
-    vim \
-    ranger \
-    tmux
+    curl git vim ranger
 
 COPY requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt
